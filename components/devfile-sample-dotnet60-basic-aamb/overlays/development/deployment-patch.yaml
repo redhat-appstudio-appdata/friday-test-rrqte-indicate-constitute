@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dotnet60-basic-aamb
+  namespace: mreid1-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:2f0cc93b5a6b697480144fd97f6e98dca9d8ea6b64c685ce4db87bad0e82ed6b
+        name: container-image
+        resources: {}
+status: {}
